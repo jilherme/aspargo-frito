@@ -10,17 +10,17 @@ export const Home = () => {
       <h1>Welcome to Aspargo Frito!</h1>
 
       <s.Projects>
-        <div className="project" onClick={() => navigate("/igo")}>
+        <s.CardProject onClick={() => navigate("/igo")}>
           <img src={Pikachu} />
 
           <span>Igo</span>
-        </div>
+        </s.CardProject>
 
-        <div className="project" onClick={() => navigate("/augusto")}>
+        <s.CardProject onClick={() => navigate("/augusto")}>
           <img src={Nerd} />
 
           <span>Augusto</span>
-        </div>
+        </s.CardProject>
 
         <div className="disabled">Coming soon...</div>
 

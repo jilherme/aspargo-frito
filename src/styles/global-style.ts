@@ -1,10 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import Sundries from "../assets/fonts/Sundries.otf";
 
-type TFlex = {
-  isLogged: boolean;
-};
-
 const GlobalStyle = createGlobalStyle`
 * {
     padding: 0px;
@@ -43,10 +39,11 @@ const GlobalStyle = createGlobalStyle`
 // ----------------------------------
 
 /* suaviza o scroll e remove espaços em branco */
-html,body {
+html, body {
     scroll-behavior: smooth;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
+    background-color: #acecf7;
 }
 
 input, button, textarea {
@@ -64,7 +61,7 @@ button, input, textarea {
     }
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -76,11 +73,10 @@ a{
 
 export const Main = styled.main`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #acecf7;
 `;
 
 export default GlobalStyle;
